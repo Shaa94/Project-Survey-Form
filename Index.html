@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Meet-Up</title>
+</head>
+<body>
+    <h1 id="title">MEET-UP SURVEY FORM</h1>
+    <p id="description">Succumb to temptation and discover your soul mate</p>
+<fieldset id="cadre-bg-img">
+    <form id="survey-form">
+        <div class="input-fields">
+            <div id="box-name">
+                <label id=name-label> Name *:</label><br>
+                <input type="text" name="name" id="name" placeholder="Enter your name" required>
+            </div>
+            <div id="box-email">
+                <label id=email-label>Email *:</label><br>
+                <input type="email" name="name" id="email" placeholder="Enter your email" required>
+            </div>
+            <div id="box-number">
+                <label id=number-label>Number *:</label><br>
+                <input type="number" name="name" id="number" placeholder="How old are you?" min=18 max=99 required>
+            </div>
+        </div>
+
+        <div id="dropdown">
+            <label for="dropdown">Are you ?</label><br>
+            <select name="dropdown" id="dropdown-select">
+                <option value="">Please choose an option</option>
+                <option value="single">Single</option>
+                <option value="relationship">In a relationship</option>
+                <option value="married">Married</option>
+                <option value="divorced">Divorced</option>
+                <option value="other">Other</option>
+            </select>
+        </div><br>
+        <div>
+            <legend>What's your kinky mode?</legend>
+            <label for="dominant">Dominant</label>
+            <input type="radio" name="style" id="dominant" value="dominant"><br>
+            <label for="sub">Sub</label>
+            <input type="radio" name="style" id="sub" value="sub"><br>
+            <label for="brat">Brat</label>
+            <input type="radio" name="style" id="brat" value="brat"><br>
+            <label for="switch">Switch</label>
+            <input type="radio" name="style" id="switch" value="switch"><br>
+            <label for="other">Other</label>
+            <input type="radio" name="style" id="other" value="other">
+            
+        </div><br>
+
+        <div id="look-for">
+            <label for="look-for">What are you looking for?</label><br>
+            <select name="look-for" id="look-for-select">
+                <option value="">Please choose an option</option>
+                <option value="serious">Serious relationship</option>
+                <option value="fun">Just fun</option>
+                <option value="drink">Have a drink</option>
+                <option value="other">Other</option>
+            </select>
+        </div><br>
+
+        <div id="checkbox">
+            <legend>Specific conditions</legend>
+            <p>(check all boxes that apply)</p>
+            <div>
+                <label class="container">I have 18 years old or more
+                    <input type="checkbox" checked="checked" value="18th">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+
+            <div>
+                <label class="container">I agree not to provide personal information
+                    <input type="checkbox" checked="checked" value="human">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+
+            <div>
+                <label class="container">
+                    I consent to the use of certain data
+                    <input type="checkbox" checked="checked" value="earth">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </div><br>
+
+        <div>
+            <label>Anything else?</label>
+          </div>
+          <div>
+          <textarea rows="3" cols="40" placeholder="additional comments">
+      </textarea>
+          </div>
+
+          <input type="submit" id="submit">
+
+    </form>
+</fieldset>
+<footer>
+    <p>© SCS - MEET-UP Survey Form - April 2022</p>
+</footer>
+</body>
+</html>
